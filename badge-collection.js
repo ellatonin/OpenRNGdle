@@ -1,4 +1,5 @@
 const state = loadState();
+applySiteName(" — Badge Collection");
 
 const badgeGrid = document.getElementById("badge-grid");
 const collectionSummary = document.getElementById("collection-summary");

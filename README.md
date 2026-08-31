@@ -27,7 +27,15 @@ comparing behavior against the real RNGdle or an earlier version of this repo:
 - **Roll tiers are percentile-driven**, computed by actually scanning all
   1,000,001 possible rolls.
 - **Roll streaks**, tracked across local calendar days.
-- **`config.js`** holds site-level settings
+
+## Config
+
+Settings live in [`config.js`](config.js) — edit and reload, no build step.
+
+| Option | Description |
+|---|---|
+| `webpage_name` | Name shown in the page title, header, and share text. Defaults to `"OpenRNGdle"`. |
+| `streak_grace_days` | Consecutive missed days a roll streak forgives before breaking. Defaults to `0` (must roll every day). |
 
 ## Provenance
 

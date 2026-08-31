@@ -1,4 +1,5 @@
 let state = loadState();
+applySiteName();
 
 const rollBtn = document.getElementById("roll-btn");
 const rollHint = document.getElementById("roll-hint");
@@ -320,7 +321,7 @@ function buildShareText() {
   const remaining = result.count - topBadges.length;
 
   const lines = [
-    `OpenRNGdle 🎲 ${result.n}`,
+    `${CONFIG.webpage_name} 🎲 ${result.n}`,
     "",
     `${ROLL_TIER_INFO[tier].emoji} ${tier.toUpperCase()} • ${tierPct}`,
     "",

@@ -1,5 +1,13 @@
 const STORAGE_KEY = "openrngdle_state_v1";
 
+// Applies CONFIG.webpage_name to the page title (with an optional suffix,
+// e.g. " — Badge Collection") and the header's #site-title element.
+function applySiteName(titleSuffix = "") {
+  document.title = `${CONFIG.webpage_name}${titleSuffix}`;
+  const el = document.getElementById("site-title");
+  if (el) el.textContent = CONFIG.webpage_name;
+}
+
 function localDateString(date) {
   const y = date.getFullYear();
   const m = String(date.getMonth() + 1).padStart(2, "0");

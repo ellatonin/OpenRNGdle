@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenRNGdle — Badge Collection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>OpenRNGdle</h1>
+    <p class="tagline">Roll a number. Make it mean something.</p>
+    <div class="lifetime-ep">Lifetime EP: <span id="lifetime-ep">0</span></div>
+    <div id="streak-display" class="streak-display"></div>
+    <nav class="site-nav">
+      <a href="index.html">Roll</a>
+      <a href="badges.html" class="active">Badge Collection</a>
+    </nav>
+  </header>
+
+  <main class="main-wide">
+    <section class="card">
+      <h2>Badge Collection</h2>
+      <p class="hint">Undiscovered badges show as ???. Roll to reveal what patterns exist.</p>
+      <p id="collection-summary" class="hint">0 / 0 discovered</p>
+      <div id="badge-grid" class="badge-grid"></div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="badges.js"></script>
+  <script src="state.js"></script>
+  <script src="badge-collection.js"></script>
+</body>
+</html>

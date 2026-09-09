@@ -1,48 +1,51 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>OpenRNGdle</title>
-  <link rel="stylesheet" href="style.css" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>OpenRNGdle</title>
+	<link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="site-header">
-    <h1 id="site-title">OpenRNGdle</h1>
-    <p class="tagline">Roll a number. Make it mean something.</p>
-    <div class="lifetime-ep">Lifetime EP: <span id="lifetime-ep">0</span></div>
-    <div id="streak-display" class="streak-display"></div>
-    <nav class="site-nav">
-      <a href="index.html" class="active">Roll</a>
-      <a href="badges.html">Badge Collection</a>
-    </nav>
-  </header>
+	<header class="site-header">
+		<h1 id="site-title">OpenRNGdle</h1>
+		<p class="tagline">Roll a number. Make it mean something.</p>
+		<div class="lifetime-ep">Lifetime EP: <span id="lifetime-ep">0</span></div>
+		<div id="streak-display" class="streak-display"></div>
+		<nav class="site-nav">
+			<a href="index.html" class="active">Roll</a>
+			<a href="badges.html">Badge Collection</a>
+		</nav>
+	</header>
 
-  <main>
-    <section id="roll-section" class="card">
-      <p id="roll-hint">You get one roll a day, from 0 to 1,000,000.</p>
-      <button id="roll-btn">Roll</button>
-      <p id="cooldown-text" class="hint" hidden>Next roll in <span id="countdown">00:00:00</span></p>
-    </section>
+	<main>
+		<section id="roll-section" class="card">
+			<p id="roll-hint">You get one roll a day, from 0 to 1,000,000.</p>
+			<button id="roll-btn">Roll</button>
+			<p id="cooldown-text" class="hint" hidden>Next roll in <span id="countdown">00:00:00</span></p>
+		</section>
 
-    <section id="result-section" class="card" hidden>
-      <div id="result-number" class="result-number">0</div>
-      <div id="roll-tier" class="roll-tier"></div>
-      <div id="badges-header" class="badges-header">0 badges earned</div>
-      <div class="ep-share-row">
-        <div id="result-ep" class="result-ep">+0 EP</div>
-        <button id="share-btn">Share result</button>
-      </div>
-      <div id="result-badges" class="badge-list"></div>
-    </section>
-  </main>
+		<section id="result-section" class="card" hidden>
+			<div id="result-number" class="result-number">0</div>
+			<div id="roll-tier" class="roll-tier"></div>
+			<div id="badges-header" class="badges-header">0 badges earned</div>
+			<div class="ep-share-row">
+				<div id="result-ep" class="result-ep">+0 EP</div>
+				<button id="share-btn">Share result</button>
+			</div>
+			<div id="result-badges" class="badge-list"></div>
+		</section>
+	</main>
 
-  <div id="toast" class="toast" hidden></div>
+	<div id="toast" class="toast" hidden></div>
 
-  <script src="config.js"></script>
-  <script src="badges.js"></script>
-  <script src="percentiles.js"></script>
-  <script src="state.js"></script>
-  <script src="app.js"></script>
+	<script src="config.js"></script>
+	<script src="badges.js"></script>
+	<script src="percentiles.js"></script>
+	<script src="state.js"></script>
+	<script src="app.js"></script>
 </body>
+
 </html>

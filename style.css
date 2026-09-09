@@ -1,376 +1,382 @@
 :root {
-  --bg: #0f1220;
-  --surface: #1a1e33;
-  --text: #eef0ff;
-  --muted: #9aa0c3;
-  --accent: #6c8cff;
+	--bg: #0f1220;
+	--surface: #1a1e33;
+	--text: #eef0ff;
+	--muted: #9aa0c3;
+	--accent: #6c8cff;
 
-  --common: #9aa0c3;
-  --uncommon: #4caf6d;
-  --rare: #4d8dff;
-  --epic: #b46cff;
-  --anomaly: #ff5c7a;
-  --mythic: #ffb84d;
+	--common: #9aa0c3;
+	--uncommon: #4caf6d;
+	--rare: #4d8dff;
+	--epic: #b46cff;
+	--anomaly: #ff5c7a;
+	--mythic: #ffb84d;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 24px 16px 64px;
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 24px 16px 64px;
 }
 
 .site-header {
-  text-align: center;
-  margin-bottom: 24px;
+	text-align: center;
+	margin-bottom: 24px;
 }
 
 .site-header h1 {
-  margin: 0 0 4px;
-  font-size: 2.2rem;
+	margin: 0 0 4px;
+	font-size: 2.2rem;
 }
 
 .tagline {
-  margin: 0 0 8px;
-  color: var(--muted);
+	margin: 0 0 8px;
+	color: var(--muted);
 }
 
 .lifetime-ep {
-  font-weight: 600;
-  color: var(--mythic);
+	font-weight: 600;
+	color: var(--mythic);
 }
 
 .streak-display {
-  font-weight: 600;
-  color: var(--rare);
-  font-size: 0.9rem;
-  margin-top: 2px;
+	font-weight: 600;
+	color: var(--rare);
+	font-size: 0.9rem;
+	margin-top: 2px;
 }
 
 .site-nav {
-  margin-top: 12px;
-  display: flex;
-  gap: 8px;
-  justify-content: center;
+	margin-top: 12px;
+	display: flex;
+	gap: 8px;
+	justify-content: center;
 }
 
 .site-nav a {
-  color: var(--muted);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  padding: 6px 14px;
-  border-radius: 999px;
+	color: var(--muted);
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 0.9rem;
+	padding: 6px 14px;
+	border-radius: 999px;
 }
 
 .site-nav a:hover {
-  color: var(--text);
+	color: var(--text);
 }
 
 .site-nav a.active {
-  background: var(--surface);
-  color: var(--text);
+	background: var(--surface);
+	color: var(--text);
 }
 
 main {
-  width: 100%;
-  max-width: 640px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+	width: 100%;
+	max-width: 640px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 }
 
 main.main-wide {
-  max-width: 960px;
+	max-width: 960px;
 }
 
 .card {
-  background: var(--surface);
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
+	background: var(--surface);
+	border-radius: 12px;
+	padding: 20px;
+	text-align: center;
 }
 
 .card h2 {
-  margin-top: 0;
+	margin-top: 0;
 }
 
 .hint {
-  color: var(--muted);
-  font-size: 0.85rem;
+	color: var(--muted);
+	font-size: 0.85rem;
 }
 
 button {
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 24px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
+	background: var(--accent);
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 12px 24px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
 }
 
 button:hover {
-  filter: brightness(1.1);
+	filter: brightness(1.1);
 }
 
 .result-number {
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
+	font-size: 3rem;
+	font-weight: 800;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
 }
 
 .roll-digit-row {
-  display: flex;
-  justify-content: center;
-  gap: 1px;
+	display: flex;
+	justify-content: center;
+	gap: 1px;
 }
 
 .roll-digit {
-  display: inline-block;
-  width: 0.72em;
-  color: var(--accent);
-  font-variant-numeric: tabular-nums;
+	display: inline-block;
+	width: 0.72em;
+	color: var(--accent);
+	font-variant-numeric: tabular-nums;
 }
 
 .result-ep {
-  color: var(--mythic);
-  font-weight: 600;
+	color: var(--mythic);
+	font-weight: 600;
 }
 
 .ep-share-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  margin: 12px 0 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 14px;
+	margin: 12px 0 16px;
 }
 
 .ep-share-row button {
-  padding: 8px 18px;
-  font-size: 0.9rem;
+	padding: 8px 18px;
+	font-size: 0.9rem;
 }
 
 .badge-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-  margin: 12px 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	justify-content: center;
+	margin: 12px 0;
 }
 
 .badge-chip {
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #0f1220;
+	padding: 4px 10px;
+	border-radius: 999px;
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: #0f1220;
 }
 
 .roll-tier {
-  font-weight: 700;
-  font-size: 0.95rem;
-  margin: 4px 0 2px;
+	font-weight: 700;
+	font-size: 0.95rem;
+	margin: 4px 0 2px;
 }
 
 .roll-rank {
-  font-weight: 500;
-  font-size: 0.8rem;
-  opacity: 0.85;
+	font-weight: 500;
+	font-size: 0.8rem;
+	opacity: 0.85;
 }
 
 .badges-header {
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.75rem;
-  color: var(--muted);
-  font-weight: 700;
-  margin: 4px 0 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	font-size: 0.75rem;
+	color: var(--muted);
+	font-weight: 700;
+	margin: 4px 0 14px;
 }
 
 .badge-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: left;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	text-align: left;
 }
 
 .badge-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid #262a45;
-  border-radius: 10px;
-  padding: 14px 16px;
-  opacity: 0;
-  animation: badge-in 0.5s ease forwards;
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid #262a45;
+	border-radius: 10px;
+	padding: 14px 16px;
+	opacity: 0;
+	animation: badge-in 0.5s ease forwards;
 }
 
 @keyframes badge-in {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .badge-card-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	margin-bottom: 4px;
 }
 
 .badge-title {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 700;
-  flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-weight: 700;
+	flex-wrap: wrap;
 }
 
 .rarity-pill {
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  padding: 2px 8px;
-  border-radius: 999px;
-  border: 1px solid currentColor;
+	font-size: 0.65rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	padding: 2px 8px;
+	border-radius: 999px;
+	border: 1px solid currentColor;
 }
 
 .ep-pill {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--mythic);
-  background: rgba(255, 184, 77, 0.12);
-  padding: 3px 10px;
-  border-radius: 999px;
-  white-space: nowrap;
+	font-size: 0.8rem;
+	font-weight: 700;
+	color: var(--mythic);
+	background: rgba(255, 184, 77, 0.12);
+	padding: 3px 10px;
+	border-radius: 999px;
+	white-space: nowrap;
 }
 
 .badge-desc {
-  color: var(--muted);
-  font-size: 0.8rem;
-  margin: 4px 0 10px;
+	color: var(--muted);
+	font-size: 0.8rem;
+	margin: 4px 0 10px;
 }
 
 .digit-row {
-  display: flex;
-  gap: 4px;
+	display: flex;
+	gap: 4px;
 }
 
 .digit-box {
-  width: 26px;
-  height: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  font-weight: 700;
-  font-size: 0.85rem;
-  background: #14172a;
-  color: var(--muted);
+	width: 26px;
+	height: 26px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	font-weight: 700;
+	font-size: 0.85rem;
+	background: #14172a;
+	color: var(--muted);
 }
 
 .digit-box.hit {
-  color: #0f1220;
+	color: #0f1220;
 }
 
 .badge-children {
-  margin-top: 10px;
-  padding-top: 8px;
-  border-top: 1px dashed #262a45;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+	margin-top: 10px;
+	padding-top: 8px;
+	border-top: 1px dashed #262a45;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
 }
 
 .badge-child {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.8rem;
-  color: var(--muted);
-  padding-left: 12px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 0.8rem;
+	color: var(--muted);
+	padding-left: 12px;
 }
 
 .badge-child .earned-label {
-  margin-left: auto;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+	margin-left: auto;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
 }
 
 .badge-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 10px;
-  margin-top: 12px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+	gap: 10px;
+	margin-top: 12px;
 }
 
 .badge-cell {
-  border-radius: 8px;
-  padding: 10px 6px;
-  font-size: 0.8rem;
-  border: 2px solid transparent;
+	border-radius: 8px;
+	padding: 10px 6px;
+	font-size: 0.8rem;
+	border: 2px solid transparent;
 }
 
 .badge-cell.locked {
-  background: #14172a;
-  color: var(--muted);
-  border-color: #262a45;
+	background: #14172a;
+	color: var(--muted);
+	border-color: #262a45;
 }
 
 .badge-cell.unlocked {
-  background: rgba(255, 255, 255, 0.06);
+	background: rgba(255, 255, 255, 0.06);
 }
 
 .badge-name {
-  font-weight: 700;
-  margin-bottom: 2px;
+	font-weight: 700;
+	margin-bottom: 2px;
 }
 
 .badge-ep {
-  font-size: 0.7rem;
-  opacity: 0.8;
+	font-size: 0.7rem;
+	opacity: 0.8;
 }
 
 .rarity-common.unlocked,
 .badge-chip.rarity-common {
-  background: var(--common);
+	background: var(--common);
 }
+
 .rarity-uncommon.unlocked,
 .badge-chip.rarity-uncommon {
-  background: var(--uncommon);
+	background: var(--uncommon);
 }
+
 .rarity-rare.unlocked,
 .badge-chip.rarity-rare {
-  background: var(--rare);
+	background: var(--rare);
 }
+
 .rarity-epic.unlocked,
 .badge-chip.rarity-epic {
-  background: var(--epic);
+	background: var(--epic);
 }
+
 .rarity-anomaly.unlocked,
 .badge-chip.rarity-anomaly {
-  background: var(--anomaly);
+	background: var(--anomaly);
 }
+
 .rarity-mythic.unlocked,
 .badge-chip.rarity-mythic {
-  background: var(--mythic);
+	background: var(--mythic);
 }
 
 .rarity-common.unlocked,
@@ -379,18 +385,18 @@ button:hover {
 .rarity-epic.unlocked,
 .rarity-anomaly.unlocked,
 .rarity-mythic.unlocked {
-  color: #0f1220;
-  border-color: transparent;
+	color: #0f1220;
+	border-color: transparent;
 }
 
 .toast {
-  position: fixed;
-  bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--accent);
-  color: #fff;
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-weight: 600;
+	position: fixed;
+	bottom: 24px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: var(--accent);
+	color: #fff;
+	padding: 10px 18px;
+	border-radius: 8px;
+	font-weight: 600;
 }

@@ -183,6 +183,12 @@ button:hover {
   margin: 4px 0 2px;
 }
 
+.roll-rank {
+  font-weight: 500;
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
 .badges-header {
   text-transform: uppercase;
   letter-spacing: 0.08em;

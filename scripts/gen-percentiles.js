@@ -54,6 +54,38 @@ function percentileOf(ep) {
   }
   return (t[ans][1] / PERCENTILE_TOTAL) * 100;
 }
+
+// How many of the 1,000,001 possible rolls score <= / < \`ep\`.
+function countAtOrBelow(ep) {
+  const t = PERCENTILE_TABLE;
+  let lo = 0, hi = t.length - 1, ans = -1;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    if (t[mid][0] <= ep) { ans = mid; lo = mid + 1; }
+    else hi = mid - 1;
+  }
+  return ans === -1 ? 0 : t[ans][1];
+}
+function countBelow(ep) {
+  const t = PERCENTILE_TABLE;
+  let lo = 0, hi = t.length - 1, ans = -1;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    if (t[mid][0] < ep) { ans = mid; lo = mid + 1; }
+    else hi = mid - 1;
+  }
+  return ans === -1 ? 0 : t[ans][1];
+}
+
+// Where \`ep\` places among all possible rolls, counting from each end.
+// Ties share a rank (competition-style): fromTop/fromBottom of 1 means
+// nothing scores better/worse than you.
+function rankOf(ep) {
+  return {
+    fromTop: PERCENTILE_TOTAL - countAtOrBelow(ep) + 1,
+    fromBottom: countBelow(ep) + 1,
+  };
+}
 `;
 
 fs.writeFileSync(outPath, js);

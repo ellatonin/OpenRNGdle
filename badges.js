@@ -518,6 +518,7 @@ const BADGES = [
   ["FULL_DAY", "Full Day", "⏳", 100000100, "Seconds in a day: 86400.", (c) => c.n === 86400],
   ["FOOTBALL_17776", "17776", "🏈", 100000100, 'Exactly "17776".', (c) => c.n === 17776],
   ["INFERNAL", "Infernal", "🔱", 100000100, 'Exactly "666666".', (c) => c.n === 666666],
+  ["BEANS", "Beans", "🫘", 100000100, "You got beans'd.", (c) => c.n === 834115],
   ["ALWAYS", "Always", "♾️", 50000050, "24/7, 365.", (c) => c.s === "247365" || c.s === "365247"],
   ["ULTIMEME_EXACT", "Funny Number", "😂", 50000050, 'Exactly "69420" or "42069".', (c) => c.s === "69420" || c.s === "42069"],
   ["EXACT_BOOB", "Exact Boob", "🍈", 50000050, 'Exactly "8008" or "58008".', (c) => c.n === 8008 || c.n === 58008],

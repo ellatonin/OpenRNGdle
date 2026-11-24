@@ -28,6 +28,22 @@ body {
 	padding: 24px 16px 64px;
 }
 
+.banner {
+	align-self: stretch;
+	margin: -24px -16px 20px;
+	padding: 10px 16px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 0.9rem;
+	background: var(--accent);
+	color: #fff;
+	white-space: pre-line;
+}
+
+.banner[hidden] {
+	display: none;
+}
+
 .site-header {
 	text-align: center;
 	margin-bottom: 24px;
@@ -78,6 +94,31 @@ body {
 .site-nav a.active {
 	background: var(--surface);
 	color: var(--text);
+}
+
+.data-controls {
+	margin-top: 8px;
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+}
+
+.data-controls[hidden] {
+	display: none;
+}
+
+.data-btn {
+	background: #ff0000;
+	color: #fff;
+	border: 1px solid #ff0000;
+	border-radius: 999px;
+	padding: 5px 14px;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.data-btn:hover {
+	filter: brightness(1.1);
 }
 
 main {

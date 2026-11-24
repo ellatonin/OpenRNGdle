@@ -3,4 +3,11 @@ const CONFIG = {
 	webpage_name: "OpenRNGdle",
 	// How many consecutive missed days are forgiven before a streak breaks.
 	streak_grace_days: 0,
+	// Show Export/Import buttons so players can back up or transfer their progress.
+	enable_import_export: true,
+	// Show a banner across the top of every page with a custom message.
+	enable_banner: false,
+	banner_text: "**WARNING**\nNewline",
+	banner_bg_color: "#ff0000",
+	banner_text_color: "#000000",
 };

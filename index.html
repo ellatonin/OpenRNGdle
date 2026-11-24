@@ -9,6 +9,8 @@
 </head>
 
 <body>
+	<div id="banner" class="banner" hidden></div>
+
 	<header class="site-header">
 		<h1 id="site-title">OpenRNGdle</h1>
 		<p class="tagline">Roll a number. Make it mean something.</p>
@@ -18,6 +20,11 @@
 			<a href="index.html" class="active">Roll</a>
 			<a href="badges.html">Badge Collection</a>
 		</nav>
+		<div id="data-controls" class="data-controls" hidden>
+			<button id="export-btn" class="data-btn">Export</button>
+			<button id="import-btn" class="data-btn">Import</button>
+			<input id="import-input" type="file" accept=".rngdle" hidden />
+		</div>
 	</header>
 
 	<main>
@@ -45,6 +52,8 @@
 	<script src="badges.js"></script>
 	<script src="percentiles.js"></script>
 	<script src="state.js"></script>
+	<script src="banner.js"></script>
+	<script src="importexport.js"></script>
 	<script src="app.js"></script>
 </body>
 
